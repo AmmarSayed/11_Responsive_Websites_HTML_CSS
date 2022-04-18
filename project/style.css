@@ -2,6 +2,7 @@
 * {
   margin: 0;
   padding: 0;
+  box-sizing: border-box;
 }
 
 body {
@@ -18,10 +19,9 @@ h3 {
 }
 
 h1 {
-  font-size: 26px;
+  font-size: 22px;
   text-transform: uppercase;
   font-style: italic;
-  margin-bottom: 20px;
 }
 
 h2 {
@@ -39,9 +39,10 @@ h4 {
   font-size: 20px;
   text-transform: uppercase;
   text-align: center;
+  margin-bottom: 30px;
 }
 
-p {
+p:not(:last-child) {
   font-size: 22px;
   line-height: 1.5;
   margin-bottom: 15px;
@@ -49,49 +50,50 @@ p {
 
 li,
 ol {
-  margin-left: 50px;
   margin-bottom: 20px;
 }
 
-li:not(li:last-child) {
-  font-size: 20px;
-  margin-bottom: 10px;
-}
-
-.contianer {
-  width: 700px;
+.container {
+  width: 1200px;
   margin-inline: auto;
   position: relative;
 }
 
+/* HEADER */
 .main-header {
   background-color: #f7f7f7;
   padding: 20px 40px;
-  margin-bottom: 60px;
+  /* margin-bottom: 60px; */
+  display: flex;
+  justify-content: space-between;
 }
 
 .post-header {
   margin-bottom: 40px;
 }
 
+/* NAVBAR */
 nav {
-  font-size: 18px;
-  text-align: center;
+  font-size: 16px;
+  /* text-align: center; */
 }
 
 nav a:link:not(a:last-child) {
-  /* background-color: #808080;
+  /* 
+  background-color: #808080;
   color: white;
   margin: 20px;
   padding: 20px;
-  display: block; */
-  display: inline-block;
+  display: block; 
+  */
+  /* display: inline-block; */
   margin-right: 30px;
-  margin-top: 10px;
+  /* margin-top: 10px; */
 }
 
 article {
-  margin-bottom: 60px;
+  /* margin-bottom: 60px; */
+  /* flex: 1; */
 }
 
 #autor {
@@ -103,12 +105,7 @@ article {
   font-size: 16px;
 }
 
-.related-author {
-  font-size: 18px;
-  font-weight: bold;
-}
-
-.related-list {
+.related-posts {
   list-style: none;
 }
 
@@ -117,10 +114,8 @@ aside {
   border-top: 3px solid #1098ad;
   border-bottom: 3px solid #1098ad;
   border-radius: 15px;
-  /* padding-top: 50px;
-  padding-bottom: 50px; */
-  padding: 50px 0;
-  width: 500px;
+  padding: 50px 25px;
+  /* flex: 0 0 300px; */
 }
 
 li:first-child {
@@ -129,10 +124,6 @@ li:first-child {
 
 li:last-child {
   font-style: italic;
-}
-
-li:nth-child(even) {
-  color: #808080;
 }
 
 /* this won't work*/
@@ -197,4 +188,133 @@ h2::first-letter {
 
 h3 + p::first-line {
   color: violet;
+}
+
+/* FLOATS */
+
+/* 
+
+.author-img {
+  width: 50px;
+  height: 50px;
+  float: left;
+  margin-bottom: 20px;
+}
+
+.author {
+  float: left;
+  margin-top: 10px;
+  margin-left: 10px;
+}
+
+h1 {
+  float: left;
+}
+
+nav {
+  float: right;
+}
+
+.clearfix::after {
+  content: '';
+  display: block;
+  clear: both;
+}
+
+article {
+  width: 70%;
+  float: left;
+}
+aside {
+  background-color: bisque;
+  width: 25%;
+  float: right;
+}
+
+footer {
+  clear: both;
+}
+
+*/
+
+/* FLEXBOX */
+
+/*
+.main-header {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+
+.author-box {
+  display: flex;
+  align-items: center;
+  margin-bottom: 20px;
+}
+
+.author-img {
+  width: 50px;
+  height: 50px;
+}
+.author-text {
+  margin: 0 15px;
+}
+
+.related-post {
+  display: flex;
+  gap: 20px;
+  align-items: center;
+  margin-bottom: 20px;
+}
+
+.related-link {
+  font-size: 17px;
+  font-weight: bold;
+  font-style: normal;
+  margin-bottom: 5px;
+  display: block;
+}
+
+.related-author {
+  font-size: 14px;
+  font-weight: normal;
+  font-style: italic;
+  margin: 0;
+}
+
+li:last-child {
+  margin-bottom: 0;
+}
+
+.row {
+  display: flex;
+  gap: 75px;
+  margin-bottom: 60px;
+  align-items: flex-start;
+}
+
+
+/* CSS GRID LAYOUT*/
+.container {
+  display: grid;
+  grid-template-columns: 1fr 300px;
+  align-items: start;
+  column-gap: 75px;
+  row-gap: 60px;
+}
+
+.main-header {
+  grid-column: 1 /-1;
+}
+
+footer {
+  background-color: #1098ad;
+  grid-column: 1 /-1;
+  text-align: center;
+}
+
+footer p {
+  margin: 0;
+  padding: 10px 0;
+  color: #f7f7f7;
 }
