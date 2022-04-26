@@ -1,0 +1,140 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>App Layout</title>
+
+    <!-- google fonts -->
+
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Rubik:wght@400;600;700&display=swap"
+      rel="stylesheet"
+    />
+
+    <style>
+      /*
+          SPACING SYSTEM (px)
+          2 / 4 / 8 / 12 / 16 / 24 / 32 / 48 / 64 / 80 / 96 / 128
+
+          FONT SIZE SYSTEM (px)
+          10 / 12 / 14 / 16 / 18 / 20 / 24 / 30 / 36 / 44 / 52 / 62 / 74 / 86 / 98
+          */
+
+      /*
+      MAIN COLOR: #087f5b
+      GREY COLOR: #343a40
+      */
+
+      * {
+        margin: 0;
+        padding: 0;
+        box-sizing: border-box;
+      }
+
+      body {
+        text-align: center;
+        height: 100vh;
+        font-family: 'rubik', sans-serif;
+        font-weight: bold;
+        color: #444;
+        font-size: 24px;
+        display: grid;
+        grid-template-columns: 80px 400px 1fr 250px;
+        grid-template-rows: 80px 1fr;
+      }
+
+      nav,
+      section,
+      main,
+      aside {
+        padding-top: 24px;
+      }
+      nav {
+        background-color: #343434;
+        color: #fff;
+        grid-row: 1 / -1;
+      }
+
+      menu {
+        width: 100%;
+        background-color: #7048e8;
+        color: #fff;
+        grid-column: 2 / -1;
+        align-items: center;
+        display: flex;
+        gap: 12px;
+        padding: 0 40px;
+      }
+
+      button {
+        /* display: inline-block; */
+        padding: 8px 12px;
+        background-color: #5f3dc4;
+        color: #fff;
+        font-size: 16px;
+        font-weight: bold;
+        border: none;
+        text-transform: capitalize;
+        cursor: pointer;
+      }
+
+      button:last-child {
+        background-color: #d6336c;
+        margin-left: auto;
+      }
+
+      aside {
+        background-color: #e9ecef;
+      }
+      section {
+        background-color: #e9ecef;
+        padding: 40px;
+        display: flex;
+        flex-direction: column;
+        gap: 40px;
+
+        /* DISPLAY SCROLL TO DISPLAY ELEMENTS WHICH DOESN'T FIT INSIDE THE CONTAINER*/
+        overflow-y: scroll;
+      }
+
+      .email {
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        height: 96px;
+        background-color: #adb5db;
+        text-transform: uppercase;
+        /* stopping flex from shrinking the items */
+        flex-shrink: 0;
+      }
+    </style>
+  </head>
+  <body>
+    <nav>Nav</nav>
+    <menu>
+      <button>new</button>
+      <button>reply</button>
+      <button>forward</button>
+      <button>mark unread</button>
+      <button>trash</button>
+    </menu>
+    <section>
+      <div class="email">email 1</div>
+      <div class="email">email 2</div>
+      <div class="email">email 3</div>
+      <div class="email">email 4</div>
+      <div class="email">email 5</div>
+      <div class="email">email 6</div>
+      <div class="email">email 7</div>
+      <div class="email">email 8</div>
+      <div class="email">email 9</div>
+      <div class="email">email 10</div>
+    </section>
+    <main>email view</main>
+    <aside>additional info</aside>
+  </body>
+</html>
