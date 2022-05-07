@@ -15,16 +15,17 @@
     <!-- styles -->
     <link rel="stylesheet" href="styles/general.css" />
     <link rel="stylesheet" href="styles/style.css" />
+    <link rel="stylesheet" href="styles/queries.css" />
     <title>Omnifood</title>
   </head>
   <body>
     <!-- HEADER -->
     <header class="header">
-      <nav class="main-nav">
-        <a href="#">
-          <img class="logo" alt="Omnifood logo" src="img/omnifood-logo.png" />
-        </a>
+      <a href="#">
+        <img class="logo" alt="Omnifood logo" src="img/omnifood-logo.png" />
+      </a>
 
+      <nav class="main-nav">
         <ul class="main-nav-list">
           <li><a href="#">How it works</a></li>
           <li><a href="#">Meals</a></li>
@@ -33,6 +34,12 @@
           <li><a class="nav-cta" href="#">Try for free</a></li>
         </ul>
       </nav>
+
+      <button class="btn-mobile-nav">
+        <ion-icon class="icon-mobile-nav" name="menu-outline"></ion-icon>
+
+        <ion-icon class="icon-mobile-nav" name="close-outline"></ion-icon>
+      </button>
     </header>
     <!-- EO HEADER -->
     <main>
@@ -482,7 +489,7 @@
             <header class="pricing-header">
               <p class="plan-name">Starter</p>
               <p class="plan-price"><span>$</span>399</p>
-              <p class="plan-text">Per month. That's just $13 per meal!</p>
+              <p class="plan-text">Per month. That's just $13 per meal</p>
             </header>
             <ul class="list">
               <li class="list-item">
@@ -513,7 +520,7 @@
             <header class="pricing-header">
               <p class="plan-name">Complete</p>
               <p class="plan-price"><span>$</span>649</p>
-              <p class="plan-text">Per month. That's just $11 per meal!</p>
+              <p class="plan-text">Per month. That's just $11 per meal</p>
             </header>
             <ul class="list">
               <li class="list-item">
