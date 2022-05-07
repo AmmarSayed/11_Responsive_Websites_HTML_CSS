@@ -185,9 +185,7 @@ body {
 .btn--secondary:hover,
 .btn--secondary:active {
   background-color: #fdf2e9;
-
   /* outline: 3px solid white; */
-
   /* create border using inner shaddow */
   box-shadow: inset 0 0 0 3px #fff;
 }

@@ -473,7 +473,8 @@
   font-size: 2.4rem;
   color: #333;
   font-weight: 700;
-  margin-bottom: 1.6re;
+  margin-bottom: 1.6rem;
+  text-transform: capitalize;
 }
 
 .feature-text {
@@ -486,7 +487,7 @@
 /******************************/
 
 .section-cta {
-  padding: 9.6rem 0;
+  padding: 4.8rem 0 12.8rem;
 }
 
 .cta {
@@ -575,7 +576,73 @@
 /* MEALS PRICING */
 /******************************/
 .footer {
-  padding: 9.6rem 0;
+  padding: 12.8rem 0;
+  border-top: 1px solid #eee;
+}
+
+.grid--footer {
+  grid-template-columns: 1.5fr 1.5fr 1fr 1fr 1fr;
+}
+.footer .logo-col {
+  display: flex;
+  flex-direction: column;
+  gap: 1.6rem;
+}
+
+.copyright {
+  line-height: 1.6;
+  font-size: 1.4rem;
+  color: #767676;
+  margin-top: auto;
+}
+
+.footer-heading {
+  font-size: 1.8rem;
+  font-weight: 500;
+  margin-bottom: 4rem;
+}
+
+.social-links,
+.footer-nav,
+.footer address {
+  list-style: none;
+  display: flex;
+}
+
+.footer address,
+.social-links {
+  gap: 2.4rem;
+}
+
+.social-icon {
+  width: 2.4rem;
+  height: 2.4rem;
+}
+
+.footer-nav {
+  flex-direction: column;
+  gap: 2.4rem;
+}
+
+address a:link,
+address a:visited,
+address p,
+.social-links a:link,
+.social-links a:visited,
+.footer-nav a:link,
+.footer-nav a:visited {
+  text-decoration: none;
+  font-size: 1.6rem;
+  color: #767676;
+}
+
+address a:hover,
+address a:active,
+.social-links a:hover,
+.social-links a:active,
+.footer-nav a:hover,
+.footer-nav a:active {
+  color: #555;
 }
 
 .footer address {
