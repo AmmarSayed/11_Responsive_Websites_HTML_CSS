@@ -66,6 +66,7 @@
   cursor: pointer;
 
   display: none;
+  z-index: 1000;
 }
 
 .icon-mobile-nav {
