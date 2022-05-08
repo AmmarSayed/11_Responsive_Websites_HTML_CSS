@@ -64,7 +64,9 @@
   border: none;
   background-color: transparent;
   cursor: pointer;
-
+  width: 5rem;
+  height: 5rem;
+  overflow: hidden;
   display: none;
   z-index: 1000;
 }
@@ -79,6 +81,22 @@
   display: none;
 }
 
+.sticky .header {
+  position: fixed;
+  top: 0;
+  /* bottom: 0; */
+  width: 100%;
+  background-color: rgba(255, 255, 255, 0.9);
+  z-index: 999;
+  height: 8rem;
+  padding-top: 0;
+  padding-bottom: 0;
+  box-shadow: 0 1.2rem 3.2rem rgba(0, 0, 0, 0.1);
+}
+
+.sticky .section-hero {
+  margin-top: 9.6rem;
+}
 /******************************/
 /* Hero Section */
 /******************************/

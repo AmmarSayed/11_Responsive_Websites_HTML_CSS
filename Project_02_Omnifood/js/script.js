@@ -39,3 +39,31 @@ document.body.addEventListener('click', e => {
     }
   }
 });
+
+///////////////////////////////////////
+// add sticky nav class on if the hero section moves out of the view port , using intersection observer
+
+const heroEl = document.querySelector('#hero');
+
+const obs = new IntersectionObserver(
+  function (enries) {
+    //list of entires we take the first element
+    const ent = enries[0];
+
+    if (!ent.isIntersecting)
+      document.querySelector('body').classList.add('sticky');
+    if (ent.isIntersecting) {
+      document.querySelector('body').classList.remove('sticky');
+    }
+  },
+  {
+    //where the element should be appearing or not
+    //means we observe the element inside the viewport
+    root: null,
+    // as soon as 0% of the element is inisde the viewport
+    threshold: 0,
+    //action at -80px before end is completely outside the viewport
+    rootMargin: '-80px',
+  }
+);
+obs.observe(heroEl);
