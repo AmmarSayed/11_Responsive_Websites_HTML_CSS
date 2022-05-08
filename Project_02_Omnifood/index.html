@@ -4,6 +4,11 @@
     <meta charset="UTF-8" />
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+
+    <meta
+      name="description"
+      content="Omnifood is an AI-powered food subscription that will make you eat healthy again, 365 days per year. It's tailord to your personal tastes and nutritional needs"
+    />
     <!-- google fonts -->
     <link rel="preconnect" href="https://fonts.googleapis.com" />
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
@@ -16,6 +21,19 @@
     <link rel="stylesheet" href="styles/general.css" />
     <link rel="stylesheet" href="styles/style.css" />
     <link rel="stylesheet" href="styles/queries.css" />
+
+    <!-- browser favicon -->
+    <link
+      rel="shortcut icon"
+      href="img/favicon-64x64.png"
+      type="image/x-icon"
+    />
+
+    <!-- favicon for apple touch shortcuts -->
+    <link rel="apple-touch-icon" href="img/favicon-192.png" />
+
+    <!-- favicon for android shortcuts -->
+    <link rel="manifest" href="manifest.webmanifest" />
 
     <!-- ION-ICON PACKAGE -->
     <script
@@ -32,7 +50,7 @@
 
     <script defer src="js/script.js"></script>
 
-    <title>Omnifood</title>
+    <title>Omnifood &mdash; Never coock again!</title>
   </head>
   <body>
     <!-- HEADER -->
@@ -218,7 +236,7 @@
               <div class="meal-tags">
                 <span class="tag tag--vegetarian">Vegetarian</span>
               </div>
-              <p class="meal-title">Japanese Gyozas</p>
+              <h4 class="meal-title">Japanese Gyozas</h4>
               <ul class="meal-attributes">
                 <li class="meal-attribute">
                   <ion-icon class="meal-icon" name="flame-outline"></ion-icon>
@@ -255,7 +273,7 @@
                 <span class="tag tag--vegan">Vegan</span>
                 <span class="tag tag--paleo">Paleo</span>
               </div>
-              <p class="meal-title">Avocado Salad</p>
+              <h4 class="meal-title">Avocado Salad</h4>
               <ul class="meal-attributes">
                 <li class="meal-attribute">
                   <ion-icon class="meal-icon" name="flame-outline"></ion-icon>
@@ -647,12 +665,7 @@
 
                 <div class="form-control">
                   <label for="selection">Where did you hear about us</label>
-                  <select
-                    id="selection"
-                    name="selection"
-                    id="selection"
-                    required
-                  >
+                  <select id="selection" name="selection" required>
                     <option value="">Please choose one option:</option>
                     <option value="friends">Friends and family</option>
                     <option value="youtube">YouTube video</option>
@@ -681,12 +694,7 @@
         <!-- NAV COL -->
         <div class="logo-col">
           <a href="#" class="footer-logo">
-            <img
-              href="#"
-              class="logo"
-              alt="Omnifood logo"
-              src="img/omnifood-logo.png"
-            />
+            <img class="logo" alt="Omnifood logo" src="img/omnifood-logo.png" />
           </a>
           <ul class="social-links">
             <li>
