@@ -30,3 +30,7 @@
 - Complete beginners who want to learn how to build a professional, beautiful and responsive website
 - Students with some knowledge about HTML and CSS, but who struggle to put together a great website
 - Designers who want to expand their skill set into HTML5 and CSS3
+
+---
+
+## Final Hosted Project [Omnifood project](https://omnifood-proj.netlify.app/)
