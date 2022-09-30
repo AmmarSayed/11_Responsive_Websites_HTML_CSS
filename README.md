@@ -1,9 +1,22 @@
 # Build Responsive Real-World Websites with HTML and CSS
 
+
+## How to use
+
+The code snapshots are organized in multiple **branches** where every branch **represents a course section**.
+
+You can switch branches via the branch dropdown above the directory explorer.
+
+![Click on the branch dropdown and then select the appropriate branch for the course section you're looking for](./selecting-a-branch.jpg)
+
+---
 [Course Linkg on Udemy](https://www.udemy.com/course/design-and-develop-a-killer-website-with-html5-and-css3)
 
+---
 [Certificate](https://www.udemy.com/certificate/UC-db363197-0683-4eb2-92db-4b33eb91bee7/)
-
+---
+![](./HTML_CSS.jpg)
+---
 ## What you’ll learn
 
 - Become a modern and confident HTML and CSS developer, no prior knowledge needed!
